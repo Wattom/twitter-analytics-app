@@ -1,5 +1,6 @@
 //https://learn.microsoft.com/azure/developer/javascript/how-to/with-database/use-sql-api-as-cosmos-db
 module.exports = async function (context, req) {
+  // コメント追加のみ。PR発行時に作成されるのをやめたいだけ。
   const { CosmosClient } = require("@azure/cosmos");
   const cosmosendpoint = process.env.COSMOSDB_CONNECTIONSTRING;
   let client = null;      // Azure Cosmos DB connection object
