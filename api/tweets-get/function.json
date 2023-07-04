@@ -1,0 +1,31 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route": "tweets"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "cosDbCollection",
+      "databaseName": "%COSMOSDB_SQL_API_DATABASE_NAME%",
+      "collectionName": "%COSMOSDB_SQL_API_CONTAINER_NAME%",
+      "connectionStringSetting": "COSMOSDB_CONNECTIONSTRING",
+      "direction": "in",
+      "sqlQuery": "SELECT c.data.TweetText, c.data.TweetedBy, c.data.CreatedAtIso, c.data.TweetId, c.sentiment, c.sentences from c OFFSET 0 LIMIT 100",
+      "PartitionKey": "/partitionkey"
+    }
+
+    
+  ]
+}

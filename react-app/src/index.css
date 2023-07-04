@@ -1,0 +1,45 @@
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+@import '~admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '~admin-lte/dist/css/adminlte.min.css';
+
+@import '~react-toastify/dist/ReactToastify.min.css';
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-header .navbar-nav .nav-item .nav-link {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.direct-chat-text {
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif !important;
+  font-size:11px;
+  background: #fafeff;
+  box-shadow: 0 1px 3px -1px rgb(0 0 0 / 10%);
+}
+
+.direct-chat-messages {
+  height: 600px;
+}
+
+.positive {
+  color:rgb(58, 135, 173);
+  font-size:17px;
+}
+.negative {
+  color:rgb(185, 74, 72);
+  font-size:17px;
+}
+.neutral {
+  color:rgb(68, 68, 68);
+}
